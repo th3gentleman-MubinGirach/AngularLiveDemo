@@ -51,6 +51,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'angular-app01'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_42318E50AC1F465E814BEC7195AB82DB }}
-          package: ./dist/AngularLiveDemo/
+          app-name: 'angular-02'
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_39AFB42D04764CEB81DD1230A1708A8C }}
+          package: .
